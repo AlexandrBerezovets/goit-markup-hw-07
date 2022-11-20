@@ -1,0 +1,190 @@
+.section-basement {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-bcgnd-color);
+}
+
+.section-basement>.conteiner {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+/* Footer Address Box */
+
+.logo-secondari {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.web-secondari {
+    color: var(--white-color)
+}
+
+.address-list .map-link .link {
+    line-height: 1.71;
+    color: var(--white-color);
+}
+
+.address-list .map-link {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.mail-link .link {
+    margin-top: 0;
+    margin-bottom: 9px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-link .link {
+    margin-bottom: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-link .link:hover,
+.tel-link .link:focus {
+    color: var(--accent-color);
+}
+
+.address-list .link {
+    display: inline-block;
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--basement-text-color);
+    text-decoration: none;
+}
+
+.mail-link .link:hover,
+.mail-link .link:focus {
+    color: var(--accent-color);
+}
+
+/* Footer Social Networks */
+
+.social-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.address-soc-list {
+    display: flex;
+    gap: 10px;
+}
+
+.address-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.address-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--adress-icon-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-soc-link:hover,
+.address-soc-link:focus {
+    background-color: var(--accent-color);
+}
+
+.address-soc-icon {
+    fill: var(--white-color);
+}
+
+/* Footer Sign Up Box */
+
+.sign-part {
+    display: block;
+    margin-left: auto;
+}
+
+.sign-part-text {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.sign-part-form {
+    display: flex;
+}
+
+.sign-input {
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: var(--white-color);
+    margin-right: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sign-input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-input:focus,
+.sign-input:hover {
+    border-color: var(--accent-color);
+}
+
+.sign-part-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    border-radius: 4px;
+    border-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
+
+.sign-part-button:hover,
+.sign-part-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sign-icon {
+    fill: var(--white-color);
+    margin-left: 10px;
+}
