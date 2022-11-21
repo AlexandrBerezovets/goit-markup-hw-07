@@ -17,19 +17,17 @@
     align-items: center;
     justify-content: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    border-color: var(--accent-color);
+    }
 }
 
 .client-soc-icon {
     fill: var(--border-client-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-link:hover,
-.client-link:focus {
-    border-color: var(--accent-color);
-}
-
-.client-link:hover .client-soc-icon,
-.client-link:focus .client-soc-icon {
+.client-link:hover &,
+.client-link:focus & {
     fill: var(--accent-color);
+    }
 }

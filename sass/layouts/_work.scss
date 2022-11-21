@@ -9,6 +9,9 @@
 .work-list {
     display: flex;
     justify-content: center;
+& .item:not(:last-child) {
+    margin-right: 30px;
+    }
 }
 
 .work-box {
@@ -31,6 +34,3 @@
     color: var(--white-color);
 }
 
-.work-list .item:not(:last-child) {
-    margin-right: 30px;
-}

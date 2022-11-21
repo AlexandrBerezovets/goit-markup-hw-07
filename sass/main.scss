@@ -1,14 +1,16 @@
-@import './container';
-@import './header';
-@import './hero';
-@import './features';
-@import './work';
-@import './team';
-@import './clients';
-@import './button';
-@import './filter';
-@import './project';
-@import './footer';
-@import './modal';
+@import './components/conteiner';
+@import './utils/vars';
+@import './base/reset';
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './components/button';
+@import './layouts/filter';
+@import './layouts/project';
+@import './components/modal';
 
 

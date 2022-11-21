@@ -2,17 +2,16 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--hero-bcgnd-color);
-}
-
-.section-basement>.conteiner {
+&>.conteiner {
     display: flex;
     align-items: baseline;
     gap: 70px;
+    }
 }
 
 /* Footer Address Box */
 
-.logo-secondari {
+.logo-secondary__link {
     display: inline-block;
     font-family: 'Raleway';
     font-weight: 700;
@@ -24,37 +23,39 @@
     margin-bottom: 20px;
 }
 
-.web-secondari {
+.logo-secondary__web {
     color: var(--white-color)
 }
 
-.address-list .map-link .link {
+.address .address__map {
+    margin-top: 0;
+    margin-bottom: 9px;
+& .address__link {
     line-height: 1.71;
     color: var(--white-color);
+    }
 }
 
-.address-list .map-link {
-    margin-top: 0;
-    margin-bottom: 9px;
-}
-
-.mail-link .link {
+.address__mail .link {
     margin-top: 0;
     margin-bottom: 9px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    color: var(--accent-color);
+    }
 }
 
-.tel-link .link {
+.address__tel .link {
     margin-bottom: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tel-link .link:hover,
-.tel-link .link:focus {
+&:hover,
+&:focus {
     color: var(--accent-color);
+    }
 }
 
-.address-list .link {
+.address .address__link {
     display: inline-block;
     font-style: normal;
     line-height: 1.71;
@@ -62,14 +63,9 @@
     text-decoration: none;
 }
 
-.mail-link .link:hover,
-.mail-link .link:focus {
-    color: var(--accent-color);
-}
-
 /* Footer Social Networks */
 
-.social-title {
+.social__title {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -81,17 +77,17 @@
     margin-bottom: 20px;
 }
 
-.address-soc-list {
+.social__list {
     display: flex;
     gap: 10px;
 }
 
-.address-soc-item {
+.social__item {
     width: 44px;
     height: 44px;
 }
 
-.address-soc-link {
+.social__link {
     width: 100%;
     height: 100%;
     background-color: var(--adress-icon-color);
@@ -100,25 +96,24 @@
     align-items: center;
     justify-content: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-soc-link:hover,
-.address-soc-link:focus {
+&:hover,
+&:focus {
     background-color: var(--accent-color);
+    }
 }
 
-.address-soc-icon {
+.social__icon {
     fill: var(--white-color);
 }
 
 /* Footer Sign Up Box */
 
-.sign-part {
+.sign {
     display: block;
     margin-left: auto;
 }
 
-.sign-part-text {
+.sign__text {
     display: flex;
     margin-bottom: 20px;
     font-weight: 700;
@@ -128,11 +123,11 @@
     color: var(--white-color);
 }
 
-.sign-part-form {
+.sign__form {
     display: flex;
 }
 
-.sign-input {
+.sign__input {
     width: 358px;
     height: 50px;
     background-color: inherit;
@@ -143,9 +138,11 @@
     color: var(--white-color);
     margin-right: 12px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sign-input::placeholder {
+&:focus,
+&:hover {
+    border-color: var(--accent-color);
+    }
+&::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -155,14 +152,10 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.sign-input:focus,
-.sign-input:hover {
-    border-color: var(--accent-color);
-}
-
-.sign-part-button {
+.sign__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,14 +170,14 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--white-color);
-}
-
-.sign-part-button:hover,
-.sign-part-button:focus {
+&:hover,
+&:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    }
 }
 
-.sign-icon {
+.sign__icon {
     fill: var(--white-color);
     margin-left: 10px;
 }
