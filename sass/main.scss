@@ -1,16 +1,19 @@
-@import './components/conteiner';
 @import './utils/vars';
+@import './utils/hidden';
 @import './base/reset';
+@import './base/comman.scss';
+@import './components/button';
+@import './components/modal';
+@import './components/header.scss';
+@import './components/section.scss';
 @import './layouts/header';
-@import './layouts/footer';
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/work';
 @import './layouts/team';
 @import './layouts/clients';
-@import './components/button';
 @import './layouts/filter';
 @import './layouts/project';
-@import './components/modal';
+@import './layouts/footer';
 
 
